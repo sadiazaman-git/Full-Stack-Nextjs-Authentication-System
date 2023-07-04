@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ProfileDetail = () => {
+const ProfileDetail = ({params}:{params:{Id:string}}) => {
   return (
-    <div>ProfileDetail</div>
+    <div>{params.Id}</div>
   )
 }
 
