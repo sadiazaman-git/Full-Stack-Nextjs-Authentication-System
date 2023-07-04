@@ -10,7 +10,7 @@ export async function POST(request:NextRequest){
     try {
         // get all the data from the front end
         const {email, password} = await request.json()
-        console.log(email, password)
+        
         // Check if the user exists
         const user = await User.findOne({email})
         if (!user){
