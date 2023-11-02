@@ -26,7 +26,6 @@ const Login = () => {
       setLoading(true)
       // call api
       const response = await axios.post("/api/users/login", user);
-      console.log(response)
       // display success message in toast
       toast.success(response.data.message);
       // redirect to login page
